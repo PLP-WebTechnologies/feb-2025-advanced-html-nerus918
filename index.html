@@ -1,0 +1,146 @@
+# Advanced HTML5 Elements and Forms
+
+## Objectives
+Implement HTML5 images, lists, tables, forms and input types.
+Use form validation attributes.
+Apply multimedia elements such as audio and video.
+
+## Instructions
+
+- Create an index.html file.
+- Add an ordered list with roman numerals
+- Add an external image from pexels.com
+- Add a table of 5 contacts with; name, address, mobile and emails
+- Add a registration form
+
+>[!NOTE]
+>  The registration form should have:
+>- Name, email, password, and date fields.
+>- A dropdown, radio buttons, and checkboxes.
+>- Proper labels and placeholders.
+>- Required fields and validation attributes.
+>- Ensure proper indentation and commenting.
+ 
+# Tasks
+- Create a well-structured HTML5 document.
+- Ensure semantic correctness.
+
+Happy Coding! 💻✨
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Contact and Registration Page</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>My Favorite Activities</h2>
+        <ol type="I">
+            <li>Reading</li>
+            <li>Traveling</li>
+            <li>Photography</li>
+            <li>Cooking</li>
+            <li>Running</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Nature Photography</h2>
+        <img src="https://images.pexels.com/photos/3585702/pexels-photo-3585702.jpeg" alt="Nature Photography" width="600">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St, Cityville</td>
+                    <td>(555) 123-4567</td>
+                    <td>johndoe@email.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak Rd, Townsville</td>
+                    <td>(555) 987-6543</td>
+                    <td>janesmith@email.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Johnson</td>
+                    <td>789 Pine St, Villageburg</td>
+                    <td>(555) 321-6549</td>
+                    <td>emily.johnson@email.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>101 Maple Ave, Greenfield</td>
+                    <td>(555) 111-2222</td>
+                    <td>michael.brown@email.com</td>
+                </tr>
+                <tr>
+                    <td>Sarah Williams</td>
+                    <td>202 Birch Blvd, Lakeside</td>
+                    <td>(555) 333-4444</td>
+                    <td>sarah.williams@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <!-- Full Name -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <br><br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="\d{10}">
+            <br><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="Enter your password">
+            <br><br>
+
+            <!-- Confirm Password -->
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy;nelly 2025. My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
